@@ -1,0 +1,116 @@
+/*********/
+/* Reset */
+/*********/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main-wrapper {
+	padding: 20px 5% 0 5%;
+	font-size: 1.2em;
+	height: 100vh;
+	display: flex;
+	flex-direction: column
+}
+
+.header,
+.rules-header {
+	text-align: center;
+	margin: 40px 0 5px 0
+}
+
+.rules-list {
+	margin: 0 0 10px;
+}
+
+.rules-item {
+	margin: 0 0 0 20px;
+}
+
+.exmpl-wrapper {
+	display: flex;
+	margin: 20px 0;
+}
+
+.exmpl-wrapper div {
+	width: 50%;
+	text-align: center;	
+}
+
+.exmpl {
+	margin: 2px;
+}
+
+span {
+	margin: 0 2px;
+	padding: 1px;
+}
+
+.win-exmpl {
+	border-bottom: 2px solid green;
+}
+
+.lose-exmpl {
+	border-bottom: 2px solid red;
+}
+
+.input-wrapper {
+	margin: 25px 0 0 0;
+}
+
+.input {
+	height: 40px;
+	width: 60%;
+	border-radius: 10px;
+	display: block;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+.input:focus {
+	border: 2px solid green;
+}
+
+.submit-btn {
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 5px 10px;
+	display: block;
+	margin: 15px auto;
+}
+
+.output-wrapper {
+	margin: 10px auto 0 auto;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px 10px;
+	color: white;
+	width: 70%;
+}
+
+.output {
+	font-size: 4em;
+}
+
+.path {
+	font-size: 1.5em;
+}
+
+.won {
+	background: green;
+}
+
+.lost {
+	background: red;
+}
+
+.footer {
+	border-top: 1px solid black;
+	padding: 15px 0;
+	margin-top: auto;
+	text-align: center;
+}

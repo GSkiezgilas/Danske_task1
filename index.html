@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Frontend technical task 1</title>
+		<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="main-wrapper">
+		<h1 class="header">Technical task 1</h1>
+		<div class="rules-wrapper">
+			<h2 class="rules-header">Rules</h2>
+			<p class="rules">Determine if you can reach the last element on a positive/negative numbers set, according to these rules:</p>
+			<ul class="rules-list">
+				<li class="rules-item">You start at first element.</li>
+				<li class="rules-item">Current element value indicates how many steps you can take at most. Example: if the value is 3 you can take 0, 1, 2 or 3 steps).</li>
+			</ul>
+			<div class="exmpl-wrapper">
+				<div>
+					<p class="exmpl">Winnable example:</p>
+					<p class="exmpl"><span class="win-exmpl">1,</span><span class="win-exmpl">2,</span><span>0,</span><span  class="win-exmpl">3,</span><span>0,</span><span>2,</span><span class="win-exmpl">0</span></p>						
+				</div>
+				<div>
+					<p class="exmpl">Not winnable example:</p>
+					<p class="exmpl"><span class="lose-exmpl">1,</span><span class="lose-exmpl">2,</span><span>0,</span><span class="lose-exmpl">1,</span><span>0,</span><span>2,</span><span>0</span></p>				
+
+				</div>
+			</div>
+			<h2 class="rules-header">How to play</h2>
+			<ul class="rules-list">
+				<li class="rules-item">Enter set of negative and positive numbers in the field below.</li>
+				<li class="rules-item">Push submit button.</li>
+				<li class="rules-item">See if you have won.</li>
+			</ul>
+		</div>
+		<div class="input-wrapper">
+			<input type="text" id="input" class="input" value="1203020" onclick="resetOutput()" required>
+			<button class="submit-btn" onclick="getUsersNumbers()">Submit</button>
+		</div>
+		<div id="output-wrapper" class="output-wrapper">
+			<div id="output" class="output"></div>
+			<div id="path" class="path"></div>
+		</div>
+		<footer class="footer">
+        <address>Giedrius Skiezgilas Tel.: <a href="tel:+37065780713">+370 657 80713</a>. El.paštas: <a href="mailto:giedriusskiezgilas@yahoo.com">giedriusskiezgilas@yahoo.com</a></address>
+		</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
